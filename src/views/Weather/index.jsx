@@ -26,17 +26,21 @@ const Weather = () => {
 
     useEffect(() => {
         const fetchData = async () => {
+            try {
+
+            const apiKey = process.env.REACT_APP_API_KEY;
+
             const options = {
                 method: 'GET',
                 url: 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather',
                 params: { city: `${city}` },
                 headers: {
-                    'X-RapidAPI-Key': '675200c14fmsh1e21442a37b53bap1664b9jsn674a4a0425e6',
+                    'X-RapidAPI-Key': apiKey,
                     'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com',
                 },
             };
               
-            try {
+            
                 const response = await axios.request(options);
 
                 if (!response.ok) {
