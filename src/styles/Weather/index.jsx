@@ -1,13 +1,11 @@
 import styled from 'styled-components'
-import Scenery from '../../assets/Scenery.png'
+
 
 export const Container = styled.div`
     width: 100%;
     height: 100dvh;
     height: 100vh;
-    background-image: url(${Scenery});
-    background-size: cover; 
-    background-position: center;
+    background: linear-gradient(to bottom, #ff9966, #ff5e62, #ff355d)
 `
 
 export const Wrapper = styled.div`

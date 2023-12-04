@@ -19,7 +19,7 @@ import { TiWeatherPartlySunny, TiWeatherSunny, TiWeatherCloudy, TiWeatherShower,
 
 const Weather = () => {
     const [weather, setWeather] = useState('');
-    const [city, setCity] = useState('delhi');
+    const [city, setCity] = useState('Mumbai');
     const [sign, setSign] = useState();
     const [error, setError] = useState('');
     const inputRef = useRef(null);
